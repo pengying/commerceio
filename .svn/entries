@@ -1,0 +1,86 @@
+8
+
+dir
+44
+http://io-2011-slides.googlecode.com/svn/trunk
+http://io-2011-slides.googlecode.com/svn
+
+
+
+2011-04-19T21:49:05.519174Z
+44
+mwichary@google.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+72a760f7-aed3-7fd5-e778-9edbf0160847
+
+prettify.js
+file
+
+
+
+
+2011-04-19T00:37:56.000000Z
+d8c38aae6cceb1ef2b5f511d4b65f343
+2011-04-14T04:38:07.751800Z
+28
+lukem@google.com
+has-props
+
+images
+dir
+
+styles.css
+file
+
+
+
+
+2011-04-19T00:37:56.000000Z
+83e1539825413eecb7057762a2c8db94
+2011-04-19T21:49:05.519174Z
+44
+mwichary@google.com
+has-props
+
+template
+dir
+
+prettify.css
+file
+
+
+
+
+2011-04-29T17:54:24.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2011-04-19T21:49:05.519174Z
+44
+mwichary@google.com
+has-props
+
+slides.js
+file
+
+
+
+
+2011-04-29T17:54:24.000000Z
+3e6add6a1d11a035f8acd406855b732b
+2011-04-19T21:49:05.519174Z
+44
+mwichary@google.com
+has-props
+
