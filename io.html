@@ -273,6 +273,60 @@
 		<img class='centered' style='margin: 60px auto; height: 280px' src='images_preso/shopping_cart.gif'>
       </article>	  
 	  	  
+      <article class='asmaller'>
+        <h3>
+          Adding a Shopping Cart
+        </h3>
+        <section>		  
+        <pre class='noprettyprint'>
+// Include Google shopping cart script	
+	
+&lt;script id='googlecart-script' type='text/javascript' 
+  src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=MID'
+  currency='USD'&gt;
+&lt;/script&gt;
+</pre>
+        <pre class='noprettyprint' style='width:510px;'>
+// Add CSS annotations to products
+
+&lt;td class='product'&gt;
+ &lt;img class='product-image' src='cup.jpg'&gt;
+ &lt;div class='product-title'&gt;Travel Mug&lt;/div&gt;
+ &lt;div class='product-price'&gt;$8.02&lt;/div&gt;
+ &lt;div class='googlecart-add-button'&gt;&lt;/div&gt;
+&lt;/td&gt;
+</pre>
+		<img style='position:absolute; left: 650px; top: 340px; height: 220px' src='images_preso/mug.png'>
+        </section>
+      </article>		  
+
+      <article class='asmaller'>
+        <h3>
+          Customizing the Shopping Cart
+        </h3>
+        <section>
+        <pre class='noprettyprint'>
+// Control Location
+
+&lt;div id="googlecart-widget-control" 
+     googlecart-widget-control-align="left"
+     style="text-decoration:underline; height:30px"&gt;View cart&lt;/div&gt;
+</pre>
+        <pre class='noprettyprint'>
+// Customize Style
+
+.googlecart-override .googlecart-widget-price {color: green;}
+.googlecart-override #googlecart-widget-body {border-top-width: 4px;}
+</pre>
+        <pre class='noprettyprint'>
+// Customize Behavior
+
+highlight-color="#FF7878"
+cart-opening-time="1500"
+</pre>
+        </section>
+      </article>	
+	  
 	  <!-- AGENDA - Challenges -->
       <article>
         <h3>
@@ -563,19 +617,24 @@
         <h3>
           A slide with an embed + title
         </h3>
-        
+        <!--
         <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+		-->
       </article>
 
       <article class='nobackground'>
+	  <!--
         <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+		-->
       </article>
 
       <article class='fill'>
         <h3>
           Full-slide embed with (optional) slide title on top
         </h3>
+		<!--
         <iframe src='http://www.google.com/doodle4google/history.html'></iframe>
+		-->
       </article>
       
       <article>
