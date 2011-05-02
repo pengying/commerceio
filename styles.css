@@ -110,7 +110,10 @@ body {
 /* Slide styles */
 
 article.biglogo {
-  background: url(images/googleio-logo.png) 50% 50% no-repeat, url(images/colorbar.png) 0 600px repeat-x;
+  background: url(images/googleio-logo.png) 50% 50% no-repeat,
+              url(images/colorbar.png) 0 615px repeat-x;
+              
+  
   background-color:white;
   background-size: 600px;
 }
