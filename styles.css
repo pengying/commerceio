@@ -448,11 +448,17 @@ a:hover {
   color: rgb(255, 0, 0);
 }*/
 
+/* string content */
+/* a markup attribute value */
 
-.prettyprint .str, /* string content */
-.prettyprint .atv { /* a markup attribute value */
+/*
+.prettyprint .str, 
+*/
+.prettyprint .atv { 
   color: rgb(0, 138, 53); 
-}  
+} 
+
+
 .prettyprint .kwd, /* a keyword */
 .prettyprint .tag { /* a markup tag name */
   color: rgb(0, 102, 204);

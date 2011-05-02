@@ -189,7 +189,7 @@ function addPrettify() {
   
   var el = document.createElement('script');
   el.type = 'text/javascript';
-  el.src = PERMANENT_URL_PREFIX + 'prettify.js';
+  el.src = /* PERMANENT_URL_PREFIX + */ 'prettify.js';
   el.onload = function() {
     prettyPrint();
   }
