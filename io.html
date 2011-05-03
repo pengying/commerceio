@@ -59,9 +59,9 @@
         </h3>
         <p>
           <ul>
-            <li>Checkout Overview</li>
-            <li>Checkout Tutorial</li>
-            <li>Checkout Integration Solutions</li>
+            <li>Overview</li>
+            <li>API Tutorial</li>
+            <li>Integration Solutions</li>
             <li>Case Study</li>
             <li>Challenges</li>
             <li>Key Take-Aways</li>
@@ -70,10 +70,10 @@
         </p>
       </article>
       
-      <!-- CHECKOUT OVERVIEW -->
+      <!-- OVERVIEW -->
       <article>
         <h3>
-          Checkout Overview
+          Overview
         </h3>
         <div class="hiddenbuild" style="margin-top:15%;">
           <img class='centered' src='images_preso/buy_flow_1.png' />
@@ -83,10 +83,10 @@
         </div>
       </article>
       
-      <!-- CHECKOUT OVERVIEW -->
+      <!-- Order History -->
       <article>
         <h3>
-          Checkout Order History
+          Order History
         </h3>
         <div class="hiddenbuild" style="margin-top:5%">
           <img class='centered' src='images_preso/buyer_center.png' />
@@ -171,16 +171,16 @@
         </div>
       </article>
       
-	  <!-- AGENDA - Checkout Tutorial -->
+	  <!-- AGENDA - API Tutorial -->
       <article>
         <h3>
           Agenda
         </h3>
         <p>
           <ul>
-            <li>Checkout Overview</li>
-            <li class='emphasis'>Checkout Tutorial</li>
-            <li>Checkout Integration Solutions</li>
+            <li>Overview</li>
+            <li class='emphasis'>API Tutorial</li>
+            <li>Integration Solutions</li>
             <li>Case Study</li>
             <li>Challenges</li>
             <li>Key Take-Aways</li>
@@ -291,16 +291,16 @@
         </div>
       </article>
       
-	 <!-- AGENDA - Checkout Integration Solutions -->
+	 <!-- AGENDA - Integration Solutions -->
       <article>
         <h3>
           Agenda
         </h3>
         <p>
           <ul>
-            <li>Checkout Overview</li>
-            <li>Checkout Tutorial</li>
-            <li class='emphasis'>Checkout Integration Solutions</li>
+            <li>Overview</li>
+            <li>API Tutorial</li>
+            <li class='emphasis'>Integration Solutions</li>
             <li>Case Study</li>
             <li>Challenges</li>
             <li>Key Take-Aways</li>
@@ -309,16 +309,16 @@
         </p>
       </article>
 	  
-	  <!-- Checkout Integration Solutions -->
+	  <!-- Integration Solutions -->
       <article>
         <h3>
-          Checkout Integration Solutions
+          Integration Solutions
         </h3>
         <p>
           <ul>
             <li>Buy Now button</li>
             <li>Online store gadget</li>
-            <li>Shopping cart</li>
+            <li>Basic shopping cart</li>
             <li>Customizable shopping carts</li>
           </ul>			
         </p>
@@ -336,7 +336,7 @@
           </ul>					
         </p>
 		<div>
-		 <img class='centered' style='margin: 60px auto; height: 300px' src='images_preso/buy_now_b.png'>
+		 <img class='centered' style='margin: 60px auto; height: 330px' src='images_preso/buy_now_b.png'>
 		</div>
       </article>
 
@@ -353,7 +353,7 @@
           </ul>					
         </p>
 		<div>
-		 <img class='centered' style='margin: 40px auto; height: 280px' src='images_preso/store_gadget.jpg'>
+		 <img class='centered' style='margin: 30px auto; height: 310px' src='images_preso/store_gadget.jpg'>
 		</div>
       </article>
 	  
@@ -365,10 +365,11 @@
         <p>
           <ul>
             <li>Customize to match website look and feel</li>
-            <li>Wide range of integration options</li> 		
+            <li>Wide range of options: basic to custom-built</li> 		
+			<li>Integration with internal systems</li> 
           </ul>					
         </p>
-	    <iframe style='margin: 60px auto; height:300px; border:0px;' src='index.html'></iframe>
+	    <iframe style='margin: 25px auto; height:300px; width: 95%; border:0px;' src='index.html'></iframe>
 		<!--
 		<div class="build">
 		 <img class='centered' style='margin: 60px auto; height: 280px' src='images_preso/shopping_cart.gif'>
@@ -396,21 +397,21 @@
 // Include Google shopping cart script	
 	
 &lt;script id='googlecart-script' type='text/javascript' 
-  src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=MID'
-  currency='USD'&gt;
+  src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=MID' currency='USD'&gt;
 &lt;/script&gt;
 </pre>
-        <pre class='noprettyprint' style='width:510px;'>
+        <pre class='noprettyprint' style='width:600px;'>
 // Add CSS annotations to products
 
 &lt;td class='product'&gt;
  &lt;img class='product-image' src='cup.jpg'&gt;
+ 
  &lt;div class='product-title'&gt;Travel Mug&lt;/div&gt;
  &lt;div class='product-price'&gt;$8.02&lt;/div&gt;
  &lt;div class='googlecart-add-button'&gt;&lt;/div&gt;
 &lt;/td&gt;
 </pre>
-		<img style='position:absolute; left: 650px; top: 340px; height: 220px' src='images_preso/mug.png'>
+		<img style='position:absolute; left: 800px; top: 320px; height: 230px' src='images_preso/mug.png'>
         </section>
       </article>		  
 
@@ -422,8 +423,7 @@
         <pre class='noprettyprint'>
 // Control Location
 
-&lt;div id='googlecart-widget-control'
-     googlecart-widget-control-align='left'
+&lt;div id='googlecart-widget-control' googlecart-widget-control-align='left'
      style='text-decoration:underline; height:30px'&gt;View cart&lt;/div&gt;
 </pre>
         <pre class='noprettyprint'>
@@ -435,9 +435,13 @@
         <pre class='noprettyprint'>
 // Customize Behavior
 
+googlecartBeforeAdd(item, index, newQuantity, opt_node)
+googlecartOnCheckoutClick(items, form)
+</pre>
+<!-- 
 highlight-color='#FF7878'
 cart-opening-time='1500'
-</pre>
+-->
         </section>
       </article>	
 	  
@@ -448,9 +452,9 @@ cart-opening-time='1500'
         </h3>
         <p>
           <ul>
-            <li>Checkout Overview</li>
-            <li>Checkout Tutorial</li>
-            <li>Checkout Integration Solutions</li>
+            <li>Overview</li>
+            <li>API Tutorial</li>
+            <li>Integration Solutions</li>
             <li>Case Study</li>
             <li class='emphasis'>Challenges</li>
             <li>Key Take-Aways</li>
@@ -525,8 +529,9 @@ cart-opening-time='1500'
           <ul>
             <li>Monetization is more than just payments</li>
 			<li>Now is a great time to think about Commerce and Payments</li>
+            <li>Flexible API and tools to build a business or add to revenues</li> 				
             <li>Challenges remain: fraud, compliance, and conversions</li> 
-            <li>Google Checkout offers a flexible API and tools to build a business or add to revenues</li> 			
+		
           </ul>					
         </p>		
       </article>	  
