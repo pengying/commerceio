@@ -487,6 +487,16 @@ cart-opening-time='1500'
 		 <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/build_steal.png'>
 		</div>
       </article>	
+
+      <!-- Shopping Cart (1) -->
+      <article>
+        <h3>
+          Shopping Cart
+        </h3>
+		<div>
+		 <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/baby_steals_ordering_1.png'>
+		</div>
+      </article>
 	  
       <!-- Shopping Cart (2) -->
       <article>
@@ -494,7 +504,7 @@ cart-opening-time='1500'
           Shopping Cart
         </h3>
 		<div>
-		 <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/baby_steals_cart_3.png'>
+		 <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/baby_steals_cart.png'>
 		</div>
       </article>	  
 	  
@@ -517,6 +527,29 @@ cart-opening-time='1500'
 		 <img class='centered' style='margin: 15px auto; height: 520px' src='images_preso/baby_steals_inventory.png'>
 		</div>
       </article>
+
+	  <!-- Inventory Control -->
+      <article class='smaller'>
+        <h3>
+          Inventory Control
+        </h3>
+       <pre style='margin: 20px;'>
+function googlecartOnCheckoutClick(items, form) {
+  // If we need to show any message to the user before checkout, we do it here
+  if(BS.get_checkout_confirmed()) { 
+    return true;
+  }
+  else {
+    // Check inventory, get shipping rates, send info to Google checkout
+    BS.checkout_click(); 
+    return false;
+  }
+}
+</pre>
+		<div>
+		 <img class='centered' style='margin: 10px auto; height: 250px' src='images_preso/baby_steals_out_of_inv.png'>
+		</div>
+      </article>	  
 	  
 	  <!-- Order Management -->
       <article>
