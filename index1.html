@@ -1,0 +1,49 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Google Stores - Demo Store</title>
+<link media="screen" type="text/css" rel="stylesheet" href="./files/demo.css">
+<script  id='googlecart-script' type='text/javascript' 
+  src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=839514971325212' 
+  currency='USD' productWeightUnits='LB'
+  highlight-time="1000"
+  highlight-color="#FF7878"
+  cart-opening-time="1500"
+></script>
+<style type="text/css">
+   /* change the color of prices in the widget to green */
+   .googlecart-override .googlecart-widget-price {
+       color: green;
+   }
+</style> 
+</head>
+
+<body>
+<div id="googlecart-widget-control" googlecart-widget-control-align="left"
+     style="text-decoration:underline;height:30px">View cart</div>
+<div align="center">
+  <table>
+    <tbody><tr>
+      <td class="product">
+        <img class="product-image" src="./files/cup.jpg">
+        <span>
+          <div class="product-title">Travel Mug</div>
+          <div class="product-price">$8.02</div>  
+        </span>
+        <div class="googlecart-add-button" ></div>
+      </td>
+      <td class="product">
+        <img class="product-image" src="./files/google.jpg">
+        <span>
+          <div class="product-title">T-shirt</div>
+          <span class="product-price">$19.70</span>
+          <select class="product-attr-size">
+            <option googlecart-set-product-price="$19.70">small</option>
+            <option googlecart-set-product-price="$20.60">medium</option>
+            <option googlecart-set-product-price="$21.30">large</option>
+          </select>		  
+        </span>
+        <div class="googlecart-add-button"></div>
+      </td>
+    </tr></tbody>
+  </table>
+</div>
+</body></html>
