@@ -130,7 +130,7 @@
             </tr>
             <tr>
               <td class='build'><img class='centered' src='images_preso/external_buy_flow.png' width='250'></td>
-              <td class='build'><img class='centered' src='images_preso/credit_card.jpg' width='250'></td>
+              <td class='build' style='padding-top:40px'><img class='centered' src='images_preso/credit_card.jpg' width='250' ></td>
               <td class='build'><img class='centered' src='images_preso/nexus_s.jpg' height='250'></td>
             </tr>
           </table>
@@ -140,27 +140,34 @@
       <!-- HOW CAN CHECKOUT HELP -->
       <article>
         <h3>
-          How Can Checkout Help
+          Checkout Solves These Problems
         </h3>
         
         <div>
-          <ul>
-            <li>
-              Enable Monetization Across the Web
-            </li>
-            <li>
-              Fraud Protection
-            </li>
-            <li>
-              PCI Compliant
-            </li>
-            <li>
-              Device Agnostic
-            </li>
-            <li>
-              Simple to Implement
-            </li>
-          </ul>
+          <table class='noborder'>
+            <tr class='build'>
+              <td>
+                <h4>Buyers</h4>
+                <ul>
+                  <li>One account across the web</li>
+                  <li>Payment credentials aren't shared</li>
+                  <li>Checkout disputes on your behalf</li>
+                </ul>
+              </td>
+              
+              <td>
+                <h4>Merchants</h4>
+                <ul>
+                  <li>Millions of buyers with accounts</li>
+                  <li>Fraud protection</li>
+                  <li>PCI compliant</li>
+                  <li>Device agnostic</li>
+                  <li>Simple to implement</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+
         </div>
       </article>
       
@@ -178,17 +185,67 @@
             <li>Challenges</li>
             <li>Key Take-Aways</li>
             <li>Q&A </li>
-		 </ul>		
+		     </ul>		
         </p>
       </article>
-	  
+      
+      <!-- CART XML -->
+      <article>
+        <h3>
+          Cart API
+        </h3>
+        <section style='margin-top:5%'>
+        <pre>
+  &lt;checkout-shopping-cart xmlns=&quot;http://checkout.google.com/schema/2&quot;&gt;
+    &lt;shopping-cart&gt;
+      &lt;items&gt;
+        &lt;item&gt;
+          &lt;item-name&gt;HelloWorld 2GB MP3 Player&lt;/item-name&gt;
+          &lt;item-description&gt;HelloWorld, the simple MP3 player&lt;/item-description&gt;
+          &lt;unit-price currency=&quot;USD&quot;&gt;159.99&lt;/unit-price&gt;
+          &lt;quantity&gt;1&lt;/quantity&gt;
+        &lt;/item&gt;
+      &lt;/items&gt;
+    &lt;/shopping-cart&gt;
+    ...
+  &lt;/checkout-shopping-cart&gt;
+          </pre>
+        </section>
+      </article>
+
+
+        <article>
+          <h3>
+            Cart API
+          </h3>
+          <section>
+          <pre>
+          &lt;shipping-methods&gt;
+            &lt;flat-rate-shipping name=&quot;SuperShip Ground&quot;&gt;
+              &lt;price currency=&quot;USD&quot;&gt;9.99&lt;/price&gt;
+            &lt;/flat-rate-shipping&gt;
+          &lt;/shipping-methods&gt;
+          &lt;tax-tables&gt;
+            &lt;default-tax-table&gt;
+              &lt;tax-rules&gt;
+                &lt;default-tax-rule&gt;
+                  &lt;rate&gt;0.0825&lt;/rate&gt;
+                  ...
+                &lt;/default-tax-rule&gt;
+              &lt;/tax-rules&gt;
+            &lt;/default-tax-table&gt;
+          &lt;/tax-tables&gt;
+            </pre>
+          </section>
+        </article>
+        
       <!-- SERVER TO SERVER -->
       <article>
         <h3>
           Server to Server
         </h3>
         <div class="s2s">
-          <table>
+          <table class='noborder'>
             <tr style="height:70px"><td colspan="5"></td></tr>
             <tr>
                 <td class='columnspacingleft'></td>
