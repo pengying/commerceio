@@ -262,6 +262,8 @@
       </pre>
     </section>
   </article>
+  
+  
       <!-- SERVER TO SERVER -->
       <article>
         <h3>
@@ -314,6 +316,116 @@
         </div>
       </article>
       
+      <!-- NOTIFICATIONS -->
+      <article>
+        <h3>
+          Notifications And Order Processing
+        </h3>
+        <div class="s2s">
+          <table class='noborder'>
+            <tr style="height:70px"><td colspan="5"></td></tr>
+            <tr>
+                <td class='columnspacingleft'></td>
+                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
+                <td class='columnspacing'></td>
+                <td class='arrowspacing'></td>
+                <td class='columnspacingright'></td>
+            </tr>
+            <tr>
+              <td class='columnspacingleft'></td>
+              <td class='arrowspacing build'><img src='images_preso/arrowright.png' /></td>
+              <td class='columnspacing'></td>
+              <td class='arrowspacing'></td>
+              <td class='columnspacingright'></td>
+            </tr>
+            <tr>
+                <td class='columnspacingleft'></td>
+                <td class='arrowspacing'></td>
+                <td class='columnspacing'></td>
+                <td class='arrowspacing build'><img src='images_preso/arrowright.png' /></td>
+                <td class='columnspacingright'></td>
+            </tr>
+            <tr>
+                <td class='columnspacingleft'></td>
+                <td class='arrowspacing'></td>
+                <td class='columnspacing'></td>
+                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
+                <td class='columnspacingright'></td>
+            </tr>
+            <tr>
+                <td class='columnspacingleft'></td>
+                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
+                <td class='columnspacing'></td>
+                <td class='arrowspacing'></td>
+                <td class='columnspacingright'></td>
+            </tr>
+            <tr>
+              <td class='columnspacingleft'></td>
+              <td colspan='3' class='longarrow build'><img src='images_preso/largearrowright.png' /></td>
+              <td class='columnspacingright'></td>
+            </tr>
+          </table>
+        </div>
+      </article>
+      
+      <!-- NEW ORDER NOTIFICATION -->
+        <article>
+          <h3>
+            New Order Notification
+          </h3>
+          <section>
+          <pre>
+  &lt;new-order-notification xmlns=&quot;http://checkout.google.com/schema/2&quot;
+      serial-number=&quot;85f54628-538a-44fc-8605-ae62364f6c71&quot;&gt;
+    &lt;google-order-number&gt;841171949013218&lt;/google-order-number&gt;
+    &lt;buyer-shipping-address&gt;...&lt;/buyer-shipping-address&gt;
+    &lt;buyer-billing-address&gt;...&lt;/buyer-billing-address&gt;
+    &lt;buyer-id&gt;...&lt;/buyer-id&gt;
+    &lt;shopping-cart&gt;...&lt;/shopping-cart&gt;
+    &lt;order-adjustment&gt;...&lt;/order-adjustment&gt;
+    &lt;order-total currency=&quot;USD&quot;&gt;190.98&lt;/order-total&gt;
+    ...
+  &lt;/new-order-notification&gt;
+            </pre>
+          </section>
+        </article>
+        
+        <!-- AUTHORIZATION AMOUNT NOTIFICATION -->
+        <article>
+          <h3>
+            Authorization Amount Notification
+          </h3>
+          <section>
+          <pre>
+  &lt;authorization-amount-notification xmlns=&quot;http://checkout.google.com/schema/2&quot;
+    serial-number=&quot;bea6bc1b-e1e2-44fe-80ff-2391b25c2510&quot;&gt;
+    ...
+    &lt;authorization-amount currency=&quot;USD&quot;&gt;226.06&lt;/authorization-amount&gt;
+    &lt;authorization-expiration-date&gt;...&lt;/authorization-expiration-date&gt;
+    &lt;order-summary&gt;...&lt;/order-summary&gt;
+  &lt;/authorization-amount-notification&gt;
+            </pre>
+          </section>
+        </article>
+        
+        <!-- CHARGE AND SHIP REQUEST -->
+        <article>
+          <h3>
+            Authorization Amount Notification
+          </h3>
+          <section>
+          <pre>
+  &lt;authorization-amount-notification xmlns=&quot;http://checkout.google.com/schema/2&quot;
+    serial-number=&quot;bea6bc1b-e1e2-44fe-80ff-2391b25c2510&quot;&gt;
+    ...
+    &lt;authorization-amount currency=&quot;USD&quot;&gt;226.06&lt;/authorization-amount&gt;
+    &lt;authorization-expiration-date&gt;...&lt;/authorization-expiration-date&gt;
+    &lt;order-summary&gt;...&lt;/order-summary&gt;
+  &lt;/authorization-amount-notification&gt;
+            </pre>
+          </section>
+        </article>
+              
 	 <!-- AGENDA - Integration Solutions -->
       <article>
         <h3>
