@@ -213,36 +213,59 @@
         </section>
       </article>
 
-
-        <article>
+<!-- CART API CONTINUED -->
+      <article>
           <h3>
-            Cart API
+            Cart API Continued
           </h3>
           <section>
           <pre>
-          &lt;shipping-methods&gt;
-            &lt;flat-rate-shipping name=&quot;SuperShip Ground&quot;&gt;
-              &lt;price currency=&quot;USD&quot;&gt;9.99&lt;/price&gt;
-            &lt;/flat-rate-shipping&gt;
-          &lt;/shipping-methods&gt;
-          &lt;tax-tables&gt;
-            &lt;default-tax-table&gt;
-              &lt;tax-rules&gt;
-                &lt;default-tax-rule&gt;
-                  &lt;rate&gt;0.0825&lt;/rate&gt;
-                  ...
-                &lt;/default-tax-rule&gt;
-              &lt;/tax-rules&gt;
-            &lt;/default-tax-table&gt;
-          &lt;/tax-tables&gt;
+      &lt;shipping-methods&gt;
+        &lt;flat-rate-shipping name=&quot;SuperShip Ground&quot;&gt;
+          &lt;price currency=&quot;USD&quot;&gt;9.99&lt;/price&gt;
+        &lt;/flat-rate-shipping&gt;
+      &lt;/shipping-methods&gt;
+      &lt;tax-tables&gt;
+        &lt;default-tax-table&gt;
+          &lt;tax-rules&gt;
+            &lt;default-tax-rule&gt;
+              &lt;rate&gt;0.0825&lt;/rate&gt;
+              ...
+            &lt;/default-tax-rule&gt;
+          &lt;/tax-rules&gt;
+        &lt;/default-tax-table&gt;
+      &lt;/tax-tables&gt;
             </pre>
           </section>
         </article>
-        
+
+<!-- CLIENT TO SERVER POST -->
+  <article>
+    <h3>
+      Client To Server Cart Post
+    </h3>
+    <div style='margin-top:25px'>
+      <img class='centered' src='images_preso/client_to_server.png' />
+    </div>
+    <section>
+    <pre>
+&lt;form method=&quot;POST&quot; 
+    action=&quot;https://checkout.google.com/api/checkout/v2/checkout/Merchant/1234567890&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;cart&quot; 
+        value=&quot;PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxjaGVja291dC1zaG9wcGlu&quot;&gt;
+    &lt;input type=&quot;hidden&quot; name=&quot;signature&quot; 
+        value=&quot;kdjsf590GFDGK23l2kgit259fjSDKET0592jalkfwe3539Gjekwu&quot;&gt;
+    &lt;input type=&quot;image&quot; name=&quot;Google Checkout&quot; alt=&quot;Fast checkout through Google&quot;
+        src=&quot;http://checkout.google.com/buttons/checkout.gif?merchant_id=1234567890
+              &amp;w=180&amp;h=46&amp;style=white&amp;variant=text&amp;loc=en_US&quot;  height=&quot;46&quot; width=&quot;180&quot;&gt;
+&lt;/form&gt;
+      </pre>
+    </section>
+  </article>
       <!-- SERVER TO SERVER -->
       <article>
         <h3>
-          Server to Server
+          Server To Server Cart Post
         </h3>
         <div class="s2s">
           <table class='noborder'>
