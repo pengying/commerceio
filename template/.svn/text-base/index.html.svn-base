@@ -2,11 +2,13 @@
 
 <!--
   Google I/O 2011 HTML slides template
-  
-  Created by Luke Mahé (lukem@google.com) 
-         and Marcin Wichary (mwichary@google.com).
-   
-  URL: http://go/io-html-slides
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/io-2011-slides/
 -->
 
 <html>
@@ -27,7 +29,7 @@
 
   <body style='display: none'>
 
-    <section class='slides'>
+    <section class='slides layout-regular'>
       
       <!-- Your slides (<article>s) go here. Delete or comment out the
            slides below. -->
@@ -235,6 +237,9 @@
         <p>
           <img style='height: 500px' src='images/example-graph.png'>
         </p>
+        <div class='source'>
+          Source: Sergey Brin
+        </div>
       </article>
 
       <article>
@@ -244,6 +249,9 @@
         <p>
           <img class='centered' style='height: 500px' src='images/example-graph.png'>
         </p>
+        <div class='source'>
+          Source: Larry Page
+        </div>
       </article>
 
       <article class='fill'>
@@ -253,6 +261,9 @@
         <p>
           <img src='images/example-cat.jpg'>
         </p>
+        <div class='source white'>
+          Source: Eric Schmidt
+        </div>
       </article>
 
       <article>
@@ -301,6 +312,15 @@
 &lt;/style&gt;
 </pre>
         </section>
+      </article>
+      
+      <article>
+        <quot>
+          The best way to predict the future is to invent it
+        </quot>
+        <div class='author'>
+          Alan Kay
+        </div>
       </article>
       
       <article class='nobackground'>

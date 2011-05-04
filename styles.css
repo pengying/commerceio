@@ -127,6 +127,14 @@ article.biglogo {
   margin-right:auto;
 }
 
+.notifications {
+  background: url(images_preso/notificationbackground.png) 50% 50% no-repeat;
+  height:450px;
+  width:500px;
+  margin-top:5%;
+  margin-left:auto;
+  margin-right:auto;
+}
 /* Slides */
 
 .slides > article {
@@ -584,6 +592,28 @@ article.smaller pre {
   padding-left:0px;
   padding-right:0px;
   width:180px;
+}
+
+.ncolumnspacingleft{
+  width:133px;
+}
+
+.ncolumnspacingright{
+  width:133px;
+}
+
+.nobotmargin{
+  line-height:15px;
+  font-size:15px;
+  text-align:center;
+}
+
+.narrowspacing{
+  padding-left:0px;
+  padding-right:0px;
+  margin-top:0px;
+  width:180px;
+  height:40px;
 }
 
 .longarrow{

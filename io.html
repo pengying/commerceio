@@ -102,10 +102,10 @@
         <div>
           <table class='centered noborder' style='padding-left:20%;padding-right:20%;' width='600' >
             <tr>
-              <td class='smallermargins'><img class='centered' src='images_preso/android_market.png' width='125' /></td>
-              <td class='smallermargins'><img class='centered' src='images_preso/chrome_web_store.jpg' width='125' /></td>
-              <td class='smallermargins'><img class='centered' src='images_preso/apps_marketplace.png' width='125' /></td>
-              <td class='smallermargins'><img class='centered' src='images_preso/picasa.png' width='125' /></td>
+              <td class='smallermargins'><img class='centered' src='images_preso/android_market.png' height='125'/></td>
+              <td class='smallermargins'><img class='centered' src='images_preso/chrome_web_store.jpg' height='125'/></td>
+              <td class='smallermargins'><img class='centered' src='images_preso/apps_marketplace.png' height='125'/></td>
+              <td class='smallermargins'><img class='centered' src='images_preso/picasa.png' height='125'/></td>
             </tr>
           </table>
         </div>
@@ -185,10 +185,42 @@
             <li>Challenges</li>
             <li>Key Take-Aways</li>
             <li>Q&A </li>
-		     </ul>		
+  
+          </ul>
+         
         </p>
       </article>
-      
+
+	  <!-- CHECKOUT APIS -->
+      <article>
+        <h3>
+          Checkout APIs
+        </h3>
+        <div class='build'style='margin-top:40px'>
+          <div>
+            <h4 style='margin-top:0px; margin-bottom:0px'>Purchasing</h4>
+            <ul style='margin-top:5px; margin-bottom:20px'>
+              <li>Checkout API</li>
+              <li>Merchant Calculations API</li>
+            </ul>
+          </div>
+          <div>
+          <h4 style='margin-top:0px; margin-bottom:0px'>Fulfillment</h4>
+          <ul style='margin-top:5px; margin-bottom:20px'>
+            <li>Notification API</li>
+            <li>Notification History API</li>
+            <li>Order Processing API</li>
+		      </ul>
+		      </div>
+		      <div>
+		      <h4 style='margin-top:0px; margin-bottom:0px'>Reporting</h4>
+		      <ul style='margin-top:5px; margin-bottom:20px'>
+		        <li>Order Report API</li>
+		      </ul>
+		      </div>
+        </div>
+      </article>
+        
       <!-- CART XML -->
       <article>
         <h3>
@@ -274,14 +306,14 @@
             <tr style="height:70px"><td colspan="5"></td></tr>
             <tr>
                 <td class='columnspacingleft'></td>
-                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
+                <td class='arrowspacing build'><div class='nobotmargin'><p>Serve Page</p><img src='images_preso/arrowleft.png' /></div></td>
                 <td class='columnspacing'></td>
                 <td class='arrowspacing'></td>
                 <td class='columnspacingright'></td>
             </tr>
             <tr>
               <td class='columnspacingleft'></td>
-              <td class='arrowspacing build'><img src='images_preso/arrowright.png' /></td>
+              <td class='arrowspacing build'><div class='nobotmargin'><p>User Action</p><img src='images_preso/arrowright.png' /></div></td>
               <td class='columnspacing'></td>
               <td class='arrowspacing'></td>
               <td class='columnspacingright'></td>
@@ -290,26 +322,26 @@
                 <td class='columnspacingleft'></td>
                 <td class='arrowspacing'></td>
                 <td class='columnspacing'></td>
-                <td class='arrowspacing build'><img src='images_preso/arrowright.png' /></td>
+                <td class='arrowspacing build'><div class='nobotmargin'><p>Post Cart</p><img src='images_preso/arrowright.png' /></div></td>
                 <td class='columnspacingright'></td>
             </tr>
             <tr>
                 <td class='columnspacingleft'></td>
                 <td class='arrowspacing'></td>
                 <td class='columnspacing'></td>
-                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
+                <td class='arrowspacing build'><div class='nobotmargin'><p>Redirect URL Response</p><img src='images_preso/arrowleft.png' /></div></td>
                 <td class='columnspacingright'></td>
             </tr>
             <tr>
                 <td class='columnspacingleft'></td>
-                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
+                <td class='arrowspacing build'><div class='nobotmargin'><p>Pass URL to Client</p><img src='images_preso/arrowleft.png' /></div></td>
                 <td class='columnspacing'></td>
                 <td class='arrowspacing'></td>
                 <td class='columnspacingright'></td>
             </tr>
             <tr>
               <td class='columnspacingleft'></td>
-              <td colspan='3' class='longarrow build'><img src='images_preso/largearrowright.png' /></td>
+              <td colspan='3' class='longarrow build'><div class='nobotmargin'><p>Redirect User To Checkout</p><img src='images_preso/largearrowright.png' /></div></td>
               <td class='columnspacingright'></td>
             </tr>
           </table>
@@ -321,48 +353,23 @@
         <h3>
           Notifications And Order Processing
         </h3>
-        <div class="s2s">
+        <div class="notifications">
           <table class='noborder'>
-            <tr style="height:70px"><td colspan="5"></td></tr>
+            <tr style="height:70px"><td colspan="3"></td></tr>
             <tr>
-                <td class='columnspacingleft'></td>
-                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
-                <td class='columnspacing'></td>
-                <td class='arrowspacing'></td>
-                <td class='columnspacingright'></td>
+                <td class='ncolumnspacingleft'></td>
+                <td class='narrowspacing build'><div class='nobotmargin'><p>New Order Notification</p><img src='images_preso/medium_arrow_left.png'/></div></td>
+                <td class='ncolumnspacingright'></td>
             </tr>
             <tr>
-              <td class='columnspacingleft'></td>
-              <td class='arrowspacing build'><img src='images_preso/arrowright.png' /></td>
-              <td class='columnspacing'></td>
-              <td class='arrowspacing'></td>
-              <td class='columnspacingright'></td>
+              <td class='ncolumnspacingleft'></td>
+              <td class='narrowspacing build'><div class='nobotmargin'><p>Authorization Amt Notification</p><img src='images_preso/medium_arrow_left.png'/></div></td>
+              <td class='ncolumnspacingright'></td>
             </tr>
             <tr>
-                <td class='columnspacingleft'></td>
-                <td class='arrowspacing'></td>
-                <td class='columnspacing'></td>
-                <td class='arrowspacing build'><img src='images_preso/arrowright.png' /></td>
-                <td class='columnspacingright'></td>
-            </tr>
-            <tr>
-                <td class='columnspacingleft'></td>
-                <td class='arrowspacing'></td>
-                <td class='columnspacing'></td>
-                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
-                <td class='columnspacingright'></td>
-            </tr>
-            <tr>
-                <td class='columnspacingleft'></td>
-                <td class='arrowspacing build'><img src='images_preso/arrowleft.png' /></td>
-                <td class='columnspacing'></td>
-                <td class='arrowspacing'></td>
-                <td class='columnspacingright'></td>
-            </tr>
-            <tr>
-              <td class='columnspacingleft'></td>
-              <td colspan='3' class='longarrow build'><img src='images_preso/largearrowright.png' /></td>
-              <td class='columnspacingright'></td>
+                <td class='ncolumnspacingleft'></td>
+                <td class='narrowspacing build'><div class='nobotmargin'><p>Charge And Ship Request</p><img src='images_preso/medium_arrow_right.png'/></div></td>
+                <td class='ncolumnspacingright'></td>
             </tr>
           </table>
         </div>
@@ -415,15 +422,20 @@
           </h3>
           <section>
           <pre>
-  &lt;authorization-amount-notification xmlns=&quot;http://checkout.google.com/schema/2&quot;
-    serial-number=&quot;bea6bc1b-e1e2-44fe-80ff-2391b25c2510&quot;&gt;
-    ...
-    &lt;authorization-amount currency=&quot;USD&quot;&gt;226.06&lt;/authorization-amount&gt;
-    &lt;authorization-expiration-date&gt;...&lt;/authorization-expiration-date&gt;
-    &lt;order-summary&gt;...&lt;/order-summary&gt;
-  &lt;/authorization-amount-notification&gt;
+  &lt;charge-and-ship-order xmlns=&quot;http://checkout.google.com/schema/2&quot;
+    google-order-number=&quot;841171949013218&quot;&gt;
+    &lt;amount currency=&quot;USD&quot;&gt;226.06&lt;/amount&gt;
+    &lt;tracking-data-list&gt;
+      &lt;tracking-data&gt;
+        &lt;carrier&gt;UPS&lt;/carrier&gt;
+        &lt;tracking-number&gt;555555555&lt;/tracking-number&gt;
+      &lt;/tracking-data&gt;
+    &lt;/tracking-data-list&gt;
+  &lt;/charge-and-ship-order&gt;
             </pre>
           </section>
+          
+          <h4>http://code.google.com/apis/checkout</h4>
         </article>
               
 	 <!-- AGENDA - Integration Solutions -->
@@ -616,7 +628,7 @@ cart-opening-time='1500'
           Mobile Checkout
         </h3>
 		<div>
-		 <img class='centered' style='margin: 20px auto; height: 480px' src='images_preso/baby_steals_mobile.png'>
+		 <img class='centered' style='margin: 20px auto; height: 480px' src='images_preso/android_buyflow.png'>
 		</div>
       </article>
 
