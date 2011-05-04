@@ -697,28 +697,71 @@ cart-opening-time='1500'
 		<div>
 		 <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/build_steal.png'>
 		</div>
-      </article>	
+      </article>
 
+      <!-- SHIPPING OPTIONS CCS-->
+      <article class='smaller'>
+      <h3>
+        Shipping Options
+      </h3>
+      <div>
+        <section>
+          <pre>
+&lt;form id=&quot;googlecart-checkout-config&quot;&gt;
+...
+  &lt;!--  Carrier calculated shipping offered by Google Checkout  --&gt;
+
+  &lt;input type=&quot;hidden&quot; name=&quot;ccs_company_1&quot; value=&quot;USPS&quot; /&gt; 
+  &lt;input type=&quot;hidden&quot; name=&quot;ccs_shipping_type_1&quot; value=&quot;Priority Mail&quot; /&gt; 
+  &lt;input type=&quot;hidden&quot; name=&quot;ccs_price_1&quot; value=&quot;6.8&quot; /&gt; 
+  &lt;input type=&quot;hidden&quot; name=&quot;ccs_additional_fixed_price_1&quot; value=&quot;2&quot;/&gt; 
+  &lt;input type=&quot;hidden&quot; name=&quot;ccs_additional_fixed_currency_1&quot; value=&quot;USD&quot;/&gt;
+&lt;/form&gt;
+          </pre>
+        <section>
+        <img class='centered' style='margin-top:5px; height: 200px' src='images_preso/baby_steals_shipping_1.png'>
+      </div>
+      </article>
+      
+      <!-- SHIPPING OPTIONS FLAT RATE-->
+      <article class='smaller'>
+      <h3>
+        Shipping Options
+      </h3>
+      <div>
+        <section>
+          <pre>
+&lt;form id=&quot;googlecart-checkout-config&quot;&gt;
+  ...
+  &lt;!--Carrier shipping offered by StealNetwork--&gt;
+
+  &lt;input type = &quot;hidden&quot; name = &quot;ship_method_name_1&quot; value=&quot;First Class&quot;/&gt;
+  &lt;input type = &quot;hidden&quot; name = &quot;ship_method_price_1&quot; value=&quot;4.24&quot;/&gt;
+  &lt;input type = &quot;hidden&quot; name = &quot;ship_method_currency_1&quot; value=&quot;USD&quot;&gt;
+  &lt;input type = &quot;hidden&quot; name = &quot;ship_method_country_1&quot; value=&quot;US&quot;&gt;
+&lt;/form&gt;
+          </pre>
+        <section>
+        <img class='centered' style='margin-top:5px; height: 200px' src='images_preso/baby_steals_shipping_2.png'>
+      </div>
+      </article>
+      
       <!-- Shopping Cart (1) -->
       <article>
         <h3>
           Shopping Cart
         </h3>	
-		<div>
-		 <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/baby_steals_ordering_2.png'>		 
-		</div>
+        <div class='hiddenbuild'>
+          <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/baby_steals_homepage_1.png'>		 
+        </div>
+        <div class='hiddenbuild'>
+          <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/baby_steals_homepage_2.png'>		 
+        </div>
+        <div class='hiddenbuild'>
+          <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/baby_steals_cart.png'>		 
+        </div>
       </article>
-	  
-      <!-- Shopping Cart (2) -->
-      <article>
-        <h3>
-          Shopping Cart
-        </h3>
-		<div>
-		 <img class='centered' style='margin: 15px auto; height: 510px' src='images_preso/baby_steals_cart.png'>
-		</div>
-      </article>	  
-	  
+      
       <!-- Mobile Checkout -->
       <article>
         <h3>
