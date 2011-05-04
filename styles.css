@@ -472,6 +472,13 @@ th {
   vertical-align: top;
 }
 
+.comparison td, .comparison th{
+  border: 1px solid rgb(224, 224, 224);
+  padding: 20px 10px;
+  vertical-align: top;
+  width: 250px;
+  text-align:center;
+}
 
 .source {
   position: absolute;

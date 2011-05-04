@@ -452,10 +452,11 @@
             <li>Challenges</li>
             <li>Key Take-Aways</li>
             <li>Q&A </li>
-          </ul>					
+          </ul>
         </p>
       </article>
-	  
+      
+      
 	  <!-- Integration Solutions -->
       <article>
         <h3>
@@ -539,47 +540,47 @@
         <h3>
           Adding a Shopping Cart
         </h3>
-        <section>		  
-        <pre class='noprettyprint'>
-// Include Google shopping cart script	
-	
+        <section>
+        <pre>
+// Include Google shopping cart script
+
 &lt;script id='googlecart-script' type='text/javascript' 
   src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=MID' currency='USD'&gt;
 &lt;/script&gt;
 </pre>
-        <pre class='noprettyprint' style='width:600px;'>
+<pre style='width:600px;'>
 // Add CSS annotations to products
 
 &lt;td class='product'&gt;
- &lt;img class='product-image' src='cup.jpg'&gt;
- 
- &lt;div class='product-title'&gt;Travel Mug&lt;/div&gt;
- &lt;div class='product-price'&gt;$8.02&lt;/div&gt;
- &lt;div class='googlecart-add-button'&gt;&lt;/div&gt;
+  &lt;img class='product-image' src='cup.jpg /'&gt;
+  &lt;div class='product-title'&gt;Travel Mug&lt;/div&gt;
+  &lt;div class='product-price'&gt;$8.02&lt;/div&gt;
+  &lt;div class='googlecart-add-button'&gt;&lt;/div&gt;
 &lt;/td&gt;
 </pre>
-		<img style='position:absolute; left: 800px; top: 320px; height: 230px' src='images_preso/mug.png'>
-        </section>
-      </article>		  
-
+      <img style='position:absolute; left: 800px; top: 320px; height: 230px' src='images_preso/mug.png'>
+      </section>
+      </article>
+      
+      <!-- CUSTOMIZING THE SHOPPING CART -->
       <article>
         <h3>
           Customizing the Shopping Cart
         </h3>
         <section>
-        <pre class='noprettyprint'>
+        <pre>
 // Control Location
 
 &lt;div id='googlecart-widget-control' googlecart-widget-control-align='left'
-     style='text-decoration:underline; height:30px'&gt;View cart&lt;/div&gt;
+   style='text-decoration:underline; height:30px'&gt;View cart&lt;/div&gt;
 </pre>
-        <pre class='noprettyprint'>
+        <pre>
 // Customize Style
 
 .googlecart-override .googlecart-widget-price {color: green;}
 .googlecart-override #googlecart-widget-body {border-top-width: 4px;}
 </pre>
-        <pre class='noprettyprint'>
+        <pre>
 // Customize Behavior
 
 googlecartBeforeAdd(item, index, newQuantity, opt_node);
@@ -598,19 +599,21 @@ cart-opening-time='1500'
           Integration Solutions Recap
         </h3>
         
-        <table style='margin-top: 50px; text-align:center;'>
+        <table style='margin-top: 50px; text-align:center;' class='comparison'>
           <tr>
             <th></th>              
             <th>
-			 <img style='' src='images_preso/icon_buynow.jpg'>
-			 Buy Now button</th>
-			<th>
-             <img style='' src='images_preso/icon_store_gadget.gif'>
-			 Store gadget</th>
-			<th>
-			 <img style='' src='images_preso/icon_ecom.jpg'>
-			 Shopping cart(s)
-			 </th>	
+              Buy Now button<br />
+              <img class='centered' src='images_preso/icon_buynow.jpg'>
+            </th>
+            <th>
+              Store gadget<br />
+              <img class='centered' src='images_preso/icon_store_gadget.gif'>
+            </th>
+            <th>
+              Shopping cart(s)<br />
+              <img class='centered' src='images_preso/icon_ecom.jpg'>
+           </th>	
           </tr>			
           <tr>
             <td>Technical Skill</td>
@@ -618,7 +621,7 @@ cart-opening-time='1500'
 			<td>Basic HTML</td>	
 			<td>Varies</td>	
 	      </tr>
-	      <tr style='padding-top:20px;'>
+	      <tr>
           <td>Purpose</td>
           <td>Single item per transaction</td>	
           <td>Multiple items per transaction</td>	
@@ -632,11 +635,29 @@ cart-opening-time='1500'
 	      </tr>
         </table>
       </article>	  	  
-	  
+
+   	 <!-- AGENDA - Integration Solutions -->
+         <article>
+           <h3>
+             Agenda
+           </h3>
+           <p>
+             <ul>
+               <li>Overview</li>
+               <li>API Tutorial</li>
+               <li>Integration Solutions</li>
+               <li class='emphasis'>Case Study</li>
+               <li>Challenges</li>
+               <li>Key Take-Aways</li>
+               <li>Q&A </li>
+             </ul>
+           </p>
+         </article>
+         
       <!-- Case Study -->
       <article>
         <h3>
-          Case Study
+          <br />
         </h3>
 		<div>
 		 <img class='centered' style='margin: 60px auto 30px auto; aheight: 530px' src='images_preso/baby_steals_logo.jpg'>
