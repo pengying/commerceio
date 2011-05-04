@@ -548,12 +548,12 @@
   src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=MID' currency='USD'&gt;
 &lt;/script&gt;
 </pre>
-<pre style='width:600px;'>
+<pre class='anoprettyprint' style='width:600px;'>
 // Add CSS annotations to products
 
 &lt;td class='product'&gt;
-  &lt;img class='product-image' src='cup.jpg /'&gt;
-  &lt;div class='product-title'&gt;Travel Mug&lt;/div&gt;
+  &lt;img class='product-image' src='cup.jpg'&gt;
+  &lt;div class='product-title'&gt;Travel Mug&lt;/div&gt;  
   &lt;div class='product-price'&gt;$8.02&lt;/div&gt;
   &lt;div class='googlecart-add-button'&gt;&lt;/div&gt;
 &lt;/td&gt;
@@ -572,19 +572,19 @@
 // Control Location
 
 &lt;div id='googlecart-widget-control' googlecart-widget-control-align='left'
-   style='text-decoration:underline; height:30px'&gt;View cart&lt;/div&gt;
+   style='text-decoration:underline; height:30px'&gt;Cart&lt;/div&gt;
 </pre>
         <pre>
 // Customize Style
 
-.googlecart-override .googlecart-widget-price {color: green;}
+.googlecart-override #googlecart-widget-head {background-color: transparent;}
 .googlecart-override #googlecart-widget-body {border-top-width: 4px;}
 </pre>
         <pre>
 // Customize Behavior
 
-googlecartBeforeAdd(item, index, newQuantity, opt_node);
-googlecartOnCheckoutClick(items, form);
+function googlecartBeforeAdd(item, index, newQuantity, opt_node);
+function googlecartOnCheckoutClick(items, form);
 </pre>
 <!-- 
 highlight-color='#FF7878'
@@ -990,14 +990,14 @@ function googlecartOnCheckoutClick(items, form) {
 		      </ul>
 		      </div>
 		      <div>
-		      <h4 style='margin-top:0px; margin-bottom:0px'>Read Through The Docs</h4>
+		      <h4 style='margin-top:0px; margin-bottom:0px'>Read Through the Docs</h4>
 		      <ul style='margin-top:5px; margin-bottom:20px'>
 		        <li>code.google.com/apis/checkout</li>
 		        <li>sites.google.com/site/checkoutshoppingcart</li>
 		      </ul>
 		      </div>
 		      <div>
-		      <h4 style='margin-top:0px; margin-bottom:0px'>Follow Us On Twitter</h4>
+		      <h4 style='margin-top:0px; margin-bottom:0px'>Follow Us</h4>
 		      <ul style='margin-top:5px; margin-bottom:20px'>
 		        <li>twitter.com/GoogCommerceDev</li>
 		      </ul>
