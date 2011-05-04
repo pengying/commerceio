@@ -468,9 +468,10 @@ th {
 td,
 th {
   border: 1px solid rgb(224, 224, 224);
-  padding: 20px 10px;
+  padding: 5px 10px;
   vertical-align: top;
 }
+
 
 .source {
   position: absolute;
