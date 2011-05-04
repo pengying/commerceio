@@ -582,7 +582,37 @@ article.smaller pre {
   display:none;
 }
 
+
 /* Pying custom stuff */
+
+.tablecenter{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.usersbooks{
+  position:absolute;
+  top:230px;
+  left:330px;
+}
+
+.usersyoutube{
+  position:absolute;
+  top:200px;
+  left:460px;
+}
+
+.userscws{
+  position:absolute;
+  top:130px;
+  left:590px;
+}
+
+.usersandroidmarket{
+  position:absolute;
+  top:100px;
+  left:730px;
+}
 
 .columnspacingleft{
   width:68px;
