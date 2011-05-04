@@ -60,13 +60,13 @@
         <p>
           <ul>
             <li>Overview</li>
-            <li>API Tutorial</li>
             <li>Integration Solutions</li>
+            <li>API Tutorial</li>
             <li>Case Study</li>
             <li>Challenges</li>
             <li>Key Take-Aways</li>
             <li>Q&A </li>
-		 </ul>		
+          </ul>
         </p>
       </article>
       
@@ -169,7 +169,207 @@
           <img class='centered' src='images_preso/growthgraph.png' />
         </div>
       </article>
-      
+
+	 <!-- AGENDA - Integration Solutions -->
+      <article>
+        <h3>
+          Agenda
+        </h3>
+        <p>
+          <ul>
+            <li>Overview</li>
+            <li class='emphasis'>Integration Solutions</li>
+            <li>API Tutorial</li>
+            <li>Case Study</li>
+            <li>Challenges</li>
+            <li>Key Take-Aways</li>
+            <li>Q&A </li>
+          </ul>
+        </p>
+      </article>
+
+
+	  <!-- Integration Solutions -->
+      <article>
+        <h3>
+          Integration Solutions
+        </h3>
+        <p>
+          <ul>
+            <li>Buy Now button</li>
+            <li>Online store gadget</li>
+            <li>Basic shopping cart</li>
+            <li>Customizable shopping carts</li>
+          </ul>			
+        </p>
+      </article>
+
+      <!-- Buy Now Buttons -->
+      <article>
+        <h3>
+          Buy Now Button
+        </h3>
+        <p>
+          <ul class="abuild">
+            <li>Sell a single item per transaction</li>
+            <li>Just copy & paste pre-generated HTML</li> 
+          </ul>					
+        </p>
+		<div>
+		 <img class='centered' style='margin: 60px auto; height: 330px' src='images_preso/buy_now_b.png'>
+		</div>
+      </article>
+
+	  <!-- Online Store Gadget -->
+      <article>
+        <h3>
+          Online Store Gadget
+        </h3>
+        <p>
+          <ul>
+            <li>Multiple items per transaction</li>
+            <li>Manage inventory in Google Docs</li> 
+            <li>Instantly embed on Google Sites, Blogger, iGoogle</li> 			
+          </ul>					
+        </p>
+		<div>
+		 <img class='centered' style='margin: 30px auto; height: 310px' src='images_preso/store_gadget.jpg'>
+		</div>
+      </article>
+
+	  <!-- Shopping Carts -->
+      <article>
+        <h3>
+          Shopping Cart
+        </h3>
+        <p>
+          <ul>
+            <li>Customize to match website look and feel</li>
+            <li>Wide range of options: basic to custom-built</li> 		
+			<li>Integration with internal systems</li> 
+          </ul>					
+        </p>
+	    <iframe style='margin: 25px auto; height:300px; width: 95%; border:0px;' src='index.html'></iframe>
+		<!--
+		<div class="build">
+		 <img class='centered' style='margin: 60px auto; height: 280px' src='images_preso/shopping_cart.gif'>
+		</div>
+		-->
+      </article>	  
+
+	  <!-- Live Cart -->	  
+	  <!--      
+	  <article>
+        <h3>
+          Live Cart
+        </h3>
+		<iframe style='height:300px; border:0px;' src='index.html'></iframe>
+      </article>
+      -->	  
+
+      <!-- Adding a Shopping Cart -->		  
+      <article class='asmaller'>
+        <h3>
+          Adding a Shopping Cart
+        </h3>
+        <section>
+        <pre>
+// Include Google shopping cart script
+
+&lt;script id='googlecart-script' type='text/javascript' 
+  src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=MID' currency='USD'&gt;
+&lt;/script&gt;
+</pre>
+<pre class='anoprettyprint' style='width:600px;'>
+// Add CSS annotations to products
+
+&lt;td class='product'&gt;
+  &lt;img class='product-image' src='cup.jpg'&gt;
+  &lt;div class='product-title'&gt;Travel Mug&lt;/div&gt;  
+  &lt;div class='product-price'&gt;$8.02&lt;/div&gt; 
+  &lt;div class='googlecart-add-button'&gt;&lt;/div&gt;
+&lt;/td&gt;
+</pre>
+      <img style='position:absolute; left: 800px; top: 320px; height: 230px' src='images_preso/mug.png'>
+      </section>
+      </article>
+
+      <!-- CUSTOMIZING THE SHOPPING CART -->
+      <article>
+        <h3>
+          Customizing the Shopping Cart
+        </h3>
+        <section>
+        <pre>
+// Control Location
+
+&lt;div id='googlecart-widget-control' googlecart-widget-control-align='left'
+   style='text-decoration:underline; height:30px'&gt;Cart&lt;/div&gt;
+</pre>
+        <pre>
+// Customize Style
+
+.googlecart-override #googlecart-widget-head {background-color: transparent;}
+.googlecart-override #googlecart-widget-body {border-top-width: 4px;}
+</pre>
+        <pre>
+// Customize Behavior
+
+function googlecartBeforeAdd(item, index, newQuantity, opt_node);
+function googlecartOnCheckoutClick(items, form);
+</pre>
+<!-- 
+highlight-color='#FF7878'
+cart-opening-time='1500'
+-->
+        </section>
+      </article>	
+
+      <!-- Integration Solutions Recap -->	  
+      <article>
+        <h3>
+          Integration Solutions Recap
+        </h3>
+
+        <table style='margin-top: 50px; text-align:center;' class='comparison'>
+          <tr>
+            <th></th>              
+            <th>
+              <img class='centered' src='images_preso/icon_buynow.jpg'>
+              Buy Now button
+
+            </th>
+            <th>
+              <img class='centered' src='images_preso/icon_store_gadget.gif'>
+              Store gadget
+
+            </th>
+            <th>
+              <img class='centered' src='images_preso/icon_ecom.jpg'>
+              Shopping cart(s)
+
+           </th>	
+          </tr>			
+          <tr>
+            <td>Technical Skill</td>
+            <td>Basic HTML</td>	
+			<td>Basic HTML</td>	
+			<td>Varies</td>	
+	      </tr>
+	      <tr>
+          <td>Purpose</td>
+          <td>Single item per transaction</td>	
+          <td>Multiple items per transaction</td>	
+          <td>Multiple items per transaction</td>	
+      </tr>
+          <tr>
+            <td>Features</td>
+            <td>Copy & Paste Simplicity</td>	
+            <td>Copy & Paste Store</td>	
+            <td>Powerful and Customizable</td>	
+	      </tr>
+        </table>
+      </article>
 	  <!-- AGENDA - API Tutorial -->
       <article>
         <h3>
@@ -178,8 +378,8 @@
         <p>
           <ul>
             <li>Overview</li>
-            <li class='emphasis'>API Tutorial</li>
             <li>Integration Solutions</li>
+            <li class='emphasis'>API Tutorial</li>
             <li>Case Study</li>
             <li>Challenges</li>
             <li>Key Take-Aways</li>
@@ -436,207 +636,7 @@
           
           <h4>http://code.google.com/apis/checkout</h4>
         </article>
-              
-	 <!-- AGENDA - Integration Solutions -->
-      <article>
-        <h3>
-          Agenda
-        </h3>
-        <p>
-          <ul>
-            <li>Overview</li>
-            <li>API Tutorial</li>
-            <li class='emphasis'>Integration Solutions</li>
-            <li>Case Study</li>
-            <li>Challenges</li>
-            <li>Key Take-Aways</li>
-            <li>Q&A </li>
-          </ul>
-        </p>
-      </article>
-      
-      
-	  <!-- Integration Solutions -->
-      <article>
-        <h3>
-          Integration Solutions
-        </h3>
-        <p>
-          <ul>
-            <li>Buy Now button</li>
-            <li>Online store gadget</li>
-            <li>Basic shopping cart</li>
-            <li>Customizable shopping carts</li>
-          </ul>			
-        </p>
-      </article>
 	  
-      <!-- Buy Now Buttons -->
-      <article>
-        <h3>
-          Buy Now Button
-        </h3>
-        <p>
-          <ul class="abuild">
-            <li>Sell a single item per transaction</li>
-            <li>Just copy & paste pre-generated HTML</li> 
-          </ul>					
-        </p>
-		<div>
-		 <img class='centered' style='margin: 60px auto; height: 330px' src='images_preso/buy_now_b.png'>
-		</div>
-      </article>
-
-	  <!-- Online Store Gadget -->
-      <article>
-        <h3>
-          Online Store Gadget
-        </h3>
-        <p>
-          <ul>
-            <li>Multiple items per transaction</li>
-            <li>Manage inventory in Google Docs</li> 
-            <li>Instantly embed on Google Sites, Blogger, iGoogle</li> 			
-          </ul>					
-        </p>
-		<div>
-		 <img class='centered' style='margin: 30px auto; height: 310px' src='images_preso/store_gadget.jpg'>
-		</div>
-      </article>
-	  
-	  <!-- Shopping Carts -->
-      <article>
-        <h3>
-          Shopping Cart
-        </h3>
-        <p>
-          <ul>
-            <li>Customize to match website look and feel</li>
-            <li>Wide range of options: basic to custom-built</li> 		
-			<li>Integration with internal systems</li> 
-          </ul>					
-        </p>
-	    <iframe style='margin: 25px auto; height:300px; width: 95%; border:0px;' src='index.html'></iframe>
-		<!--
-		<div class="build">
-		 <img class='centered' style='margin: 60px auto; height: 280px' src='images_preso/shopping_cart.gif'>
-		</div>
-		-->
-      </article>	  
-	  	  
-	  <!-- Live Cart -->	  
-	  <!--      
-	  <article>
-        <h3>
-          Live Cart
-        </h3>
-		<iframe style='height:300px; border:0px;' src='index.html'></iframe>
-      </article>
-      -->	  
-		  
-      <!-- Adding a Shopping Cart -->		  
-      <article class='asmaller'>
-        <h3>
-          Adding a Shopping Cart
-        </h3>
-        <section>
-        <pre>
-// Include Google shopping cart script
-
-&lt;script id='googlecart-script' type='text/javascript' 
-  src='https://checkout.google.com/seller/gsc/v2_2/cart.js?mid=MID' currency='USD'&gt;
-&lt;/script&gt;
-</pre>
-<pre class='anoprettyprint' style='width:600px;'>
-// Add CSS annotations to products
-
-&lt;td class='product'&gt;
-  &lt;img class='product-image' src='cup.jpg'&gt;
-  &lt;div class='product-title'&gt;Travel Mug&lt;/div&gt;  
-  &lt;div class='product-price'&gt;$8.02&lt;/div&gt; 
-  &lt;div class='googlecart-add-button'&gt;&lt;/div&gt;
-&lt;/td&gt;
-</pre>
-      <img style='position:absolute; left: 800px; top: 320px; height: 230px' src='images_preso/mug.png'>
-      </section>
-      </article>
-      
-      <!-- CUSTOMIZING THE SHOPPING CART -->
-      <article>
-        <h3>
-          Customizing the Shopping Cart
-        </h3>
-        <section>
-        <pre>
-// Control Location
-
-&lt;div id='googlecart-widget-control' googlecart-widget-control-align='left'
-   style='text-decoration:underline; height:30px'&gt;Cart&lt;/div&gt;
-</pre>
-        <pre>
-// Customize Style
-
-.googlecart-override #googlecart-widget-head {background-color: transparent;}
-.googlecart-override #googlecart-widget-body {border-top-width: 4px;}
-</pre>
-        <pre>
-// Customize Behavior
-
-function googlecartBeforeAdd(item, index, newQuantity, opt_node);
-function googlecartOnCheckoutClick(items, form);
-</pre>
-<!-- 
-highlight-color='#FF7878'
-cart-opening-time='1500'
--->
-        </section>
-      </article>	
-
-      <!-- Integration Solutions Recap -->	  
-      <article>
-        <h3>
-          Integration Solutions Recap
-        </h3>
-        
-        <table style='margin-top: 50px; text-align:center;' class='comparison'>
-          <tr>
-            <th></th>              
-            <th>
-              <img class='centered' src='images_preso/icon_buynow.jpg'>
-              Buy Now button
-              
-            </th>
-            <th>
-              <img class='centered' src='images_preso/icon_store_gadget.gif'>
-              Store gadget
-              
-            </th>
-            <th>
-              <img class='centered' src='images_preso/icon_ecom.jpg'>
-              Shopping cart(s)
-              
-           </th>	
-          </tr>			
-          <tr>
-            <td>Technical Skill</td>
-            <td>Basic HTML</td>	
-			<td>Basic HTML</td>	
-			<td>Varies</td>	
-	      </tr>
-	      <tr>
-          <td>Purpose</td>
-          <td>Single item per transaction</td>	
-          <td>Multiple items per transaction</td>	
-          <td>Multiple items per transaction</td>	
-      </tr>
-          <tr>
-            <td>Features</td>
-            <td>Copy & Paste Simplicity</td>	
-            <td>Copy & Paste Store</td>	
-            <td>Powerful and Customizable</td>	
-	      </tr>
-        </table>
-      </article>	  	  
 
    	 <!-- AGENDA - Integration Solutions -->
          <article>
@@ -646,8 +646,8 @@ cart-opening-time='1500'
            <p>
              <ul>
                <li>Overview</li>
-               <li>API Tutorial</li>
                <li>Integration Solutions</li>
+               <li>API Tutorial</li>
                <li class='emphasis'>Case Study</li>
                <li>Challenges</li>
                <li>Key Take-Aways</li>
@@ -813,7 +813,7 @@ function googlecartOnCheckoutClick(items, form) {
           Order Management
         </h3>
 		<div>
-		 <img class='centered' style='margin: 15px auto; height: 520px' src='images_preso/baby_steals_order_mgmt.png'>
+		 <img class='centered' style='margin-top: 45px; width: 1000px' src='images_preso/baby_steals_order_flow.png'>
 		</div>
       </article>	  
 	  
@@ -962,14 +962,12 @@ function googlecartOnCheckoutClick(items, form) {
           <ul class='build'>
             <li>Monetization is more than just payments</li>
 			<li>Now is a great time to think about Commerce and Payments</li>
-            <li>Flexible API and tools to build a business or add to revenues</li> 				
             <li>Challenges remain: fraud, compliance, and conversions</li> 
-		
-          </ul>					
-        </p>		
-      </article>	  
-	  
-	  <!-- Get Started -->
+            <li>Flexible API and tools to build a business or add to revenues</li>
+          </ul>
+        </p>
+      </article>
+      <!-- Get Started -->
       <article>
         <h3>
           Get Started
@@ -989,14 +987,14 @@ function googlecartOnCheckoutClick(items, form) {
 		      </ul>
 		      </div>
 		      <div>
-		      <h4 style='margin-top:0px; margin-bottom:0px'>Read Through the Docs</h4>
+		      <h4 style='margin-top:0px; margin-bottom:0px'>Read Through The Docs</h4>
 		      <ul style='margin-top:5px; margin-bottom:20px'>
 		        <li>code.google.com/apis/checkout</li>
 		        <li>sites.google.com/site/checkoutshoppingcart</li>
 		      </ul>
 		      </div>
 		      <div>
-		      <h4 style='margin-top:0px; margin-bottom:0px'>Follow Us</h4>
+		      <h4 style='margin-top:0px; margin-bottom:0px'>Follow Us On Twitter</h4>
 		      <ul style='margin-top:5px; margin-bottom:20px'>
 		        <li>twitter.com/GoogCommerceDev</li>
 		      </ul>
